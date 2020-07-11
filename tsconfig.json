@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2019", "ES2019.Object"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "camelCase",
+          "rendererOptions": {
+            "sass": {
+              "includePaths": ["styles"]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "exclude": ["node_modules"],
+  "include": ["types/next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
