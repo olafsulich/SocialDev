@@ -5,6 +5,8 @@ import marksy from "marksy";
 import Prism from "prismjs";
 import { createElement } from "react";
 import MarkdownText from "../../components/Markdown";
+import Navigation from "../../components/Navigation/Navigation";
+
 const compile = marksy({
   createElement,
   elements: {
@@ -84,6 +86,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
+      <Navigation />
       <article className="single container">
         <header className="single-header no-thumbnail">
           <div className="flex">
