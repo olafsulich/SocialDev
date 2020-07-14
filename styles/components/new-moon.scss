@@ -1,3 +1,12 @@
+p {
+  line-height: calc(17px * 1.5);
+}
+
+a {
+  border-bottom: 2px solid #e2eafd;
+  scroll-behavior: smooth;
+}
+
 code {
   font-size: 13px;
 }
@@ -91,6 +100,7 @@ kbd {
   color: #111111;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.06);
+  font-size: 14px;
 }
 
 code[class*="language-css"],

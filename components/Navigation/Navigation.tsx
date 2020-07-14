@@ -19,7 +19,7 @@ const Navigation = () => {
           <Link href="/">
             <a href="/">
               <img
-                src="/images/user.jpeg"
+                src="/images/term.png"
                 className="favicon"
                 alt="Floppy Diskette"
               />
@@ -28,6 +28,7 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="links">
+          <p>papap</p>
           {/* <Link></Link>
           {menuLinks.map((link) => (
             <Link key={link.name} to={link.link} activeClassName="active">

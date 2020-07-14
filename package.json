@@ -8,20 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tanem/react-nprogress": "^3.0.34",
     "classnames": "^2.2.6",
-    "commonmark": "^0.29.1",
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "helmet": "^3.23.3",
-    "marksy": "^8.0.0",
     "next": "9.3.5",
     "normalize-scss": "^7.0.1",
     "prismjs": "^1.20.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1",
     "react-query": "^2.4.15",
-    "remark": "^12.0.0",
-    "remark-html": "^11.0.1",
+    "react-syntax-highlighter": "^12.2.1",
     "xss": "^1.0.7"
   },
   "devDependencies": {
