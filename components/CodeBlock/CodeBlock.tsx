@@ -1,12 +1,10 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  Prism as SyntaxHighlighter,
+  SyntaxHighlighterProps,
+} from "react-syntax-highlighter";
 
-interface Props {
-  language: string;
-  value: string;
-}
-
-const CodeBlock: React.FC<Props> = ({ language, value }) => {
+const CodeBlock: React.FC<SyntaxHighlighterProps> = ({ language, value }) => {
   return (
     <SyntaxHighlighter language={language} useInlineStyles={false} style={{}}>
       {value}
