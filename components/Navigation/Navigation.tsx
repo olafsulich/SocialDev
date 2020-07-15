@@ -26,9 +26,24 @@ const Navigation = () => {
               <span className="text">SocialDev</span>
             </a>
           </Link>
+          <input
+            style={{
+              width: "400px",
+              height: "30px",
+              border: "3px solid #EDF2FF",
+              background: "none",
+              color: "#B5C2CA",
+              borderRadius: "10px",
+              marginLeft: "2rem",
+              padding: "4px 0 4px 10px",
+            }}
+            placeholder="Szukaj artykułów"
+          />
         </div>
         <div className="links">
-          <p>papap</p>
+          <a>papap</a>
+          <a>papap</a>
+          <a>papap</a>
           {/* <Link></Link>
           {menuLinks.map((link) => (
             <Link key={link.name} to={link.link} activeClassName="active">

@@ -20,7 +20,7 @@
   .nav-container {
     padding: 0 1.5rem;
     height: 55px;
-    max-width: $width;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -29,17 +29,26 @@
   }
 
   .brand {
+    display: flex;
+
     a {
       display: flex;
       align-items: center;
       color: #333;
       margin-right: 0;
-      font-weight: 500;
-      font-size: 1.15rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      border: none;
 
       &:hover,
       &:focus {
         color: black;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
       }
     }
 
