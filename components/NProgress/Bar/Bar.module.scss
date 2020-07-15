@@ -1,14 +1,15 @@
-.barInside {
+.barOutside {
   background: #29d;
-  height: 2;
+  height: 2px;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1031;
+  transform: translateX(-100%);
 }
 
-.barOutside {
+.barInside {
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   display: block;
   height: 100%;
