@@ -3,6 +3,8 @@ title: "Two Forms of Pre-rendering"
 date: "2020-01-01"
 ---
 
+![photo](https://www.frontlive.pl/static/aa66614154687f50a9298fa798cccb73/4d3f1/readme.png)
+
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - [one](#heading-1)
@@ -40,60 +42,25 @@ export default const App = () => {
 };
 ```
 
-```jsx
-import React, { useState } from "react";
+```js
+let numbers = [1, 2, 3, [4, 5], 6, 7, [8, [9, 10]]];
 
-export default const App = () => {
-  const [a, setA] = useState(1);
-  const [b, setB] = useState(2);
+numbers.flat(); // [1, 2, 3, 4, 5, 6, 7, 8, [9, 10]] - pierwszy poziom spłaszczenia
 
-  function handleChangeA(event) {
-    setA(+event.target.value);
-  }
-
-  function handleChangeB(event) {
-    setB(+event.target.value);
-  }
-
-  return (
-    <div>
-      <input type="number" value={a} onChange={handleChangeA} />
-      <input type="number" value={b} onChange={handleChangeB} />
-
-      <p>
-        {a} + {b} = {a + b}
-      </p>
-    </div>
-  );
-};
+numbers.flat(2); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] - drugi poziom spłaszczenia
 ```
 
-```jsx
-import React, { useState } from "react";
+```html
+<h2>To mój heading</h2>
+```
 
-export default const App = () => {
-  const [a, setA] = useState(1);
-  const [b, setB] = useState(2);
-
-  function handleChangeA(event) {
-    setA(+event.target.value);
+```scss
+.class {
+  color: #f1f;
+  &.border {
+    font-size: 12px;
   }
-
-  function handleChangeB(event) {
-    setB(+event.target.value);
-  }
-
-  return (
-    <div>
-      <input type="number" value={a} onChange={handleChangeA} />
-      <input type="number" value={b} onChange={handleChangeB} />
-
-      <p>
-        {a} + {b} = {a + b}
-      </p>
-    </div>
-  );
-};
+}
 ```
 
 ```bash

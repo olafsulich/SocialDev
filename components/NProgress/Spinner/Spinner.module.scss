@@ -1,0 +1,28 @@
+.spinnerContainer {
+  display: block;
+  position: fixed;
+  right: 15;
+  top: 15;
+  z-index: 1031;
+}
+
+.spinnerCircle {
+  animation: 400ms linear infinite spinner;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid #29d;
+  border-radius: 50%;
+  border-right: 2px solid transparent;
+  border-top: 2px solid #29d;
+  box-sizing: border-box;
+  height: 18;
+  width: 18;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

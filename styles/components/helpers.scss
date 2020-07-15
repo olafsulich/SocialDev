@@ -80,3 +80,32 @@
   width: 1px;
   overflow: hidden;
 }
+
+.spinnerContainer {
+  display: block;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 1031;
+}
+
+.spinnerCircle {
+  animation: 400ms linear infinite spinner;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid #29d;
+  border-radius: 50%;
+  border-right: 2px solid transparent;
+  border-top: 2px solid #29d;
+  box-sizing: border-box;
+  height: 18px;
+  width: 18px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
