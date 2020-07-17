@@ -7,6 +7,8 @@ const Navigation = () => {
     window && window.scrollY > 20 ? setScrolled(true) : setScrolled(false);
 
   useEffect(() => {
+    console.log(scrolled);
+
     window.addEventListener("scroll", navOnScroll);
 
     return () => window.removeEventListener("scroll", navOnScroll);

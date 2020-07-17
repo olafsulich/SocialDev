@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Navigation from "./Navigation/Navigation";
 import Progress from "./NProgress/Progress/Progress";
 
-const callFakeAPI = (delay) =>
-  new Promise((resolve) => {
+const callFakeAPI = (delay: number) =>
+  new Promise((resolve: () => void) => {
     setTimeout(resolve, delay);
   });
 
@@ -16,13 +16,12 @@ const Layout: React.FC = ({ children }) => {
       setIsLoading(false);
     })();
   }, []);
+
   return (
     <>
       <Progress isAnimating={isLoading} />
-      <div>
-        <Navigation />
-        <main id="main-content">{children}</main>
-      </div>
+      <Navigation />
+      <main id="main-content">{children}</main>
     </>
   );
 };
