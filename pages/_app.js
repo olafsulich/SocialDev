@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../shared/styles/main.scss";
 import * as Sentry from "@sentry/react";
 
 Sentry.init({

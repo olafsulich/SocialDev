@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext",
-      "ES2019",
-      "ES2019.Object"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext", "ES2019", "ES2019.Object"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -26,21 +20,13 @@
           "classnameTransform": "camelCase",
           "rendererOptions": {
             "sass": {
-              "includePaths": [
-                "styles"
-              ]
+              "includePaths": ["styles"]
             }
           }
         }
       }
     ]
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "types/next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["types/next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.s"]
 }

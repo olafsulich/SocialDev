@@ -1,5 +1,5 @@
 import React from "react";
-import { flatten } from "../../utils/flatten";
+import { flatten } from "../../shared/utils/flatten";
 
 interface Props {
   level: number;

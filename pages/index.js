@@ -1,5 +1,5 @@
 import Layout, { siteTitle } from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData } from "../lib/posts.js";
 import Link from "next/link";
 import Navigation from "../components/Navigation/Navigation";
 

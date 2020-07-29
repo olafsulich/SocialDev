@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useRef } from "react";
-import { updateStyles } from "../../../utils/updateStyles";
+import { updateStyles } from "../../../shared/utils/updateStyles";
 import styles from "./Bar.module.scss";
 
 interface Props {

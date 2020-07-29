@@ -22,7 +22,6 @@ const Layout: React.FC = ({ children }) => {
       <Progress isAnimating={isLoading} />
       <Navigation />
       <main id="main-content">{children}</main>
-      <button onClick={() => notnotnot()} />
     </>
   );
 };
