@@ -165,8 +165,25 @@ h5 {
   }
 }
 
-ul {
+ul li {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+  position: relative;
+  &:before {
+    content: "\2022 ";
+    position: absolute;
+    left: 0;
+    color: lighten($font-color, 30%);
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+
+ul,
+ol {
   padding: 0;
+  margin-left: 0.5rem;
 
   li {
     &.task-list-item {
@@ -177,20 +194,23 @@ ul {
       }
     }
 
-    &:before {
-      content: "\2022 ";
-      position: absolute;
-      left: 0;
-      color: lighten($font-color, 30%);
-      font-size: 22px;
-      line-height: 1.1;
-    }
-
-    position: relative;
-    list-style-type: none;
     margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    margin-left: 0.5rem;
+  }
+}
+
+ol {
+  margin-left: 2rem;
+
+  li {
+    padding-left: 0;
+  }
+}
+
+@include small-breakpoint {
+  ol {
+    li {
+      margin-left: 1.5rem;
+    }
   }
 }
 

@@ -18,6 +18,9 @@ Importantly, Next.js lets you **choose** which `pre-rendering` form to use for e
 - [Link](#heading)
 - **Bold**
 
+1. First
+2. Second
+
 ```jsx
 import React, { useState } from "react";
 
