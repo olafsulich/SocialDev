@@ -5,7 +5,8 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height}
+    $font-family;
   font-family: $font-family;
   font-size: 84% !important;
 }
@@ -172,12 +173,12 @@ ul {
       padding-left: 0;
       margin-left: 0;
       &:before {
-        content: '';
+        content: "";
       }
     }
 
     &:before {
-      content: '\2022 ';
+      content: "\2022 ";
       position: absolute;
       left: 0;
       color: lighten($font-color, 30%);
@@ -187,7 +188,7 @@ ul {
 
     position: relative;
     list-style-type: none;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     margin-left: 0.5rem;
   }
@@ -256,11 +257,6 @@ blockquote cite {
 }
 
 // Line break
-hr {
-  height: 0;
-  border: 0;
-  border-top: $borders;
-}
 
 // Definition list
 dt {
@@ -271,6 +267,6 @@ dd {
   margin-bottom: 0.5rem;
 }
 
-[type='checkbox'] {
+[type="checkbox"] {
   margin-right: 1rem;
 }

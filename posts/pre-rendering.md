@@ -14,6 +14,10 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 
 Importantly, Next.js lets you **choose** which `pre-rendering` form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side `Rendering` for others.
 
+- `Code`
+- [Link](#heading)
+- **Bold**
+
 ```jsx
 import React, { useState } from "react";
 
@@ -68,6 +72,8 @@ npm install react-native --save
 ```
 
 > Quote here **interesting shit** `lol`
+
+---
 
 - lol
 - lol

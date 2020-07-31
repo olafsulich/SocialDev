@@ -397,3 +397,9 @@ blockquote.quotation p {
     float: right;
   }
 }
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 2px solid #e5edff;
+}
