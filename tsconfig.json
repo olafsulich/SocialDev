@@ -19,6 +19,8 @@
     "strict": true,
     "noEmit": true,
     "module": "esnext",
+    "types": ["@graphql-typed-document-node/graphql", "./shared/typings/**"],
+
     "jsx": "preserve",
     "plugins": [
       {

@@ -40,6 +40,7 @@
     "zod": "^1.9.1"
   },
   "devDependencies": {
+    "@graphql-typed-document-node/graphql": "^1.0.0",
     "@testing-library/dom": "^7.21.6",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
