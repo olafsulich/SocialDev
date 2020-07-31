@@ -1,4 +1,4 @@
-type Nil<T> = T | null | undefined;
+import { Nil } from "../types/types";
 
 const updateStyles = (
   el: Nil<HTMLElement>,
