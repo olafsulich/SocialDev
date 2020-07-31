@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+th {
+  border-bottom: 2px solid #f6f8fb;
+}
+
+tfoot th {
+  border-top: 2px solid #f6f8fb;
+}
+
+td {
+  border-bottom: 2px solid #f6f8fb;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.75rem !important;
+  hyphens: auto;
+  word-break: break-word;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f8fb;
+}

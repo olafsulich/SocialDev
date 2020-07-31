@@ -14,9 +14,24 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 
 Importantly, Next.js lets you **choose** which `pre-rendering` form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side `Rendering` for others.
 
-- `Code`
-- [Link](#heading)
-- **Bold**
+| JavaScript             | TypeScript  | Css       | Html          | React      |
+| ---------------------- | ----------- | --------- | ------------- | ---------- |
+| ES6+                   | Type        | cascade   | tags          | Components |
+| Classes                | Interface   | variables | semantic      | Hooks      |
+| Higher Order Functions | Union types | scss      | accessibility | State      |
+| Classes                | Interface   | variables | semantic      | Hooks      |
+| Classes                | Interface   | variables | semantic      | Hooks      |
+| Classes                | Interface   | variables | semantic      | Hooks      |
+
+### My Great Heading {#custom-id}
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the
+
+* `Code`
+* [Link](#heading)
+* **Bold**
 
 1. First
 2. Second
@@ -47,6 +62,10 @@ export default const App = () => {
     </div>
   );
 };
+```
+
+```terminal
+npm run start
 ```
 
 ```js
