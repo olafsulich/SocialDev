@@ -97,9 +97,9 @@ kbd {
   border: none;
   font-family: $code-font-family;
   font-weight: 500;
-  color: #111111;
+  color: #0e9c97;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.06);
+  background: hsla(178, 84%, 43%, 0.1);
   font-size: 14px;
 }
 
@@ -339,27 +339,36 @@ code[class*="language-"] ::selection {
 blockquote {
   margin: 1.5rem 0;
   padding: 1rem;
-  background: #fff9db;
+  background: hsla(252, 92%, 74%, 0.09);
   border-radius: 0.3rem;
-  border: 1px solid #ffe066;
-  border-left: 5px solid #ffe066;
+  border: 1px solid hsl(252, 92%, 74%);
+  border-left: 5px solid hsl(252, 92%, 74%);
+  color: #8b8ba7;
 }
 
 blockquote p {
   margin: 0;
 }
+blockquote p strong {
+  color: hsl(252, 92%, 74%);
+}
+
+blockquote p code {
+  color: hsl(252, 92%, 74%);
+  background: hsla(252, 92%, 74%, 0.09);
+}
 
 blockquote a {
   padding: 1px 4px;
-  border-bottom: 2px solid #ffe066;
-  color: var(--heading-color);
+  border-bottom: 2px solid hsl(252, 92%, 74%);
+  color: #8b8ba7;
 }
 
 blockquote a:hover {
   border-radius: 0.3rem;
-  border-bottom: 2px solid #ffe066;
-  background: #ffe066;
-  color: var(--heading-color);
+  border-bottom: 2px solid hsl(252, 92%, 74%);
+  background: hsl(252, 92%, 74%);
+  color: #8b8ba7;
 }
 
 blockquote.quotation {
@@ -368,14 +377,14 @@ blockquote.quotation {
   background: white;
   border-radius: 0;
   border: none;
-  border-left: 6px solid var(--border);
+  border-left: 6px solid hsl(252, 92%, 74%);
   padding-bottom: 2rem;
 }
 
 blockquote.quotation p {
   font-family: Georgia, serif;
   line-height: 1.6;
-  color: var(--medium-font-color);
+  color: #8b8ba7;
   font-size: 1.1rem;
   margin: 0 0 1.5rem 0;
 }

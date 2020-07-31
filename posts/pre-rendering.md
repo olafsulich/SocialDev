@@ -5,14 +5,14 @@ date: "2020-01-01"
 
 ![photo](https://www.frontlive.pl/static/aa66614154687f50a9298fa798cccb73/4d3f1/readme.png)
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a `page`.
 
 - [one](#heading-1)
 
 * **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-* **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+* **Server-side Rendering** is the pre-rendering `method that **generates**` the HTML on **each request**.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Importantly, Next.js lets you **choose** which `pre-rendering` form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side `Rendering` for others.
 
 ```jsx
 import React, { useState } from "react";
@@ -67,9 +67,7 @@ numbers.flat(2); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] - drugi poziom spłaszczenia
 npm install react-native --save
 ```
 
-> Quote here.
-
-> My new quote
+> Quote here **interesting shit** `lol`
 
 - lol
 - lol

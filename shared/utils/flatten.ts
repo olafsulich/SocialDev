@@ -1,9 +1,6 @@
 import React from "react";
 
-const flatten = (
-  text: string,
-  child: React.Component
-): string | React.ReactNode => {
+const flatten = (text: string, child: any): any => {
   const flattenChildren = React.Children.toArray(child.props.children).reduce(
     flatten,
     text

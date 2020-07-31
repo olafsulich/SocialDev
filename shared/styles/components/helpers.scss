@@ -109,3 +109,23 @@
     transform: rotate(360deg);
   }
 }
+
+.posRel {
+  position: relative;
+}
+
+.posRel:hover > .anchor.before {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.anchor.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  padding-right: 4px;
+  border: none;
+  pointer-events: none;
+  opacity: 0;
+}
