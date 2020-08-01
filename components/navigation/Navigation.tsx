@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import useScrollPosition from '../navigation/shared/hooks/useScrollPosition';
+import useScrollPosition from './shared/hooks/useScrollPosition';
 
 const SCROLL_POSITION = 20;
 
