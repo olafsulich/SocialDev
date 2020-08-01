@@ -1,6 +1,7 @@
 import React from 'react';
 import slugify from 'slugify';
 import HeadingAnchor from '../HeadingAnchor/HeadingAnchor';
+import styles from './HeadingRenderer.module.scss';
 
 type Props = {
   level: number;
