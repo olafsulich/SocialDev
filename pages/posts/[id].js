@@ -1,10 +1,8 @@
-import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
-import Head from "next/head";
-import Navigation from "../../components/Navigation/Navigation";
-import ReactMarkdown from "react-markdown";
-import CodeBlock from "../../components/CodeBlock/CodeBlock";
-import HeadingRenderer from "../../components/HeadingRenderer/HeadingRenderer";
+import Layout from '../../components/layout';
+import { getAllPostIds, getPostData } from '../../lib/posts';
+import Head from 'next/head';
+import Navigation from '../../components/Navigation/Navigation';
+import Markdown from '../../components/markdown/Markdown';
 
 export default function Post({ postData }) {
   return (
@@ -22,12 +20,7 @@ export default function Post({ postData }) {
             </div>
           </div>
         </header>
-        <ReactMarkdown
-          source={postData.stringMark}
-          escapeHtml={false}
-          renderers={{ code: CodeBlock, heading: HeadingRenderer }}
-          className="post"
-        />
+        <Markdown source={postData.stringMark} />
       </article>
     </Layout>
   );
