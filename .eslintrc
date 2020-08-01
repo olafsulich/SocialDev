@@ -1,12 +1,18 @@
 {
+  "parser": "@typescript-eslint/parser",
   "root": false,
-  "extends": ["react-app"],
+  "extends": [
+    "react-app",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
   "rules": {
-    "react-hooks/exhaustive-deps": [
-      "error",
-      { "additionalHooks": "useCustomCompareMemo" }
-    ],
+    "react-hooks/exhaustive-deps": ["error"],
     "jsx-a11y/anchor-is-valid": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "@typescript-eslint/no-unused-vars": "off",
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error"
   }
 }
