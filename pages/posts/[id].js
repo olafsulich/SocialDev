@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Navigation from '../../components/Navigation/Navigation';
+import Navigation from '../../components/navigation/Navigation';
 import Markdown from '../../components/markdown/Markdown';
 
 export default function Post({ postData }) {

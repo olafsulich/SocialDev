@@ -1,14 +1,14 @@
-import { useNProgress } from "@tanem/react-nprogress";
-import React from "react";
-import Bar from "../Bar/Bar";
-import Container from "../Container/Container";
-import Spinner from "../Spinner/Spinner";
+import { useNProgress } from '@tanem/react-nprogress';
+import React from 'react';
+import Bar from './components/Bar/Bar';
+import Container from './components/Container/Container';
+import Spinner from './components/Spinner/Spinner';
 
-interface Props {
+type Props = {
   isAnimating: boolean;
-}
+};
 
-const Progress: React.FC<Props> = ({ isAnimating }) => {
+const Progress = ({ isAnimating }: Props) => {
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
   });

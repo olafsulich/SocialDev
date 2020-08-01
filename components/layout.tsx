@@ -1,6 +1,6 @@
-import React, { useState, useEffect, Suspense } from "react";
-import Navigation from "./Navigation/Navigation";
-import Progress from "./NProgress/Progress/Progress";
+import React, { useState, useEffect, Suspense } from 'react';
+import Navigation from './navigation/Navigation';
+import ProgressBar from './navigation/components/ProgressBar/ProgressBar';
 
 const callFakeAPI = (delay: number) =>
   new Promise((resolve: () => void) => {
@@ -19,7 +19,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
-      <Progress isAnimating={isLoading} />
+      <ProgressBar isAnimating={isLoading} />
       <Navigation />
       <main id="main-content">{children}</main>
     </>

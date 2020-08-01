@@ -1,43 +1,32 @@
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import useScrollPosition from '../navigation/shared/hooks/useScrollPosition';
+
+const SCROLL_POSITION = 20;
 
 const Navigation = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const navOnScroll = () =>
-    window && window.scrollY > 20 ? setScrolled(true) : setScrolled(false);
-
-  useEffect(() => {
-    console.log(scrolled);
-
-    window.addEventListener("scroll", navOnScroll);
-
-    return () => window.removeEventListener("scroll", navOnScroll);
-  });
+  const [scrolled, setScrolled] = useScrollPosition(SCROLL_POSITION);
 
   return (
-    <nav className={scrolled ? "nav scroll" : "nav"}>
+    <nav className={scrolled ? 'nav scroll' : 'nav'}>
       <div className="nav-container">
         <div className="brand">
           <Link href="/">
             <a href="/">
-              <img
-                src="/images/term.png"
-                className="favicon"
-                alt="Floppy Diskette"
-              />
+              <img src="/images/term.png" className="favicon" alt="Floppy Diskette" />
               <span className="text">SocialDev</span>
             </a>
           </Link>
           <input
             style={{
-              width: "400px",
-              height: "30px",
-              border: "3px solid #EDF2FF",
-              background: "none",
-              color: "#B5C2CA",
-              borderRadius: "10px",
-              marginLeft: "2rem",
-              padding: "4px 0 4px 10px",
+              width: '400px',
+              height: '30px',
+              border: '3px solid #EDF2FF',
+              background: 'none',
+              color: '#B5C2CA',
+              borderRadius: '10px',
+              marginLeft: '2rem',
+              padding: '4px 0 4px 10px',
             }}
             placeholder="Szukaj artykułów"
           />

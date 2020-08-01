@@ -1,13 +1,13 @@
-import React, { useEffect, useCallback, useRef } from "react";
-import { updateStyles } from "../../../shared/utils/updateStyles";
-import styles from "./Bar.module.scss";
+import React, { useEffect, useCallback, useRef } from 'react';
+import { updateStyles } from '../../../../../../shared/utils/updateStyles';
+import styles from './Bar.module.scss';
 
-interface Props {
+type Props = {
   progress: number;
   animationDuration: number;
-}
+};
 
-const Bar: React.FC<Props> = ({ progress, animationDuration }) => {
+const Bar = ({ progress, animationDuration }: Props) => {
   const animateBar = useRef<HTMLDivElement | null>(null);
 
   const updateBarStyles = useCallback(() => {

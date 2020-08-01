@@ -1,17 +1,14 @@
-import React, { useEffect, useCallback, useRef } from "react";
-import { updateStyles } from "../../../shared/utils/updateStyles";
-import styles from "./Container.module.scss";
+import React, { useEffect, useCallback, useRef, ReactNode } from 'react';
+import { updateStyles } from '../../../../../../shared/utils/updateStyles';
+import styles from './Container.module.scss';
 
-interface Props {
+type Props = {
   animationDuration: number;
   isFinished: boolean;
-}
+  children: ReactNode;
+};
 
-const Container: React.FC<Props> = ({
-  children,
-  isFinished,
-  animationDuration,
-}) => {
+const Container = ({ children, isFinished, animationDuration }: Props) => {
   const animateContainer = useRef<HTMLDivElement | null>(null);
 
   const updateContainerStyles = useCallback(() => {
