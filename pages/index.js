@@ -1,17 +1,17 @@
-import Layout, { siteTitle } from "../components/layout";
-import { getSortedPostsData } from "../lib/posts.js";
-import Link from "next/link";
-import Navigation from "../components/Navigation/Navigation";
+import Layout, { siteTitle } from '../components/layout';
+import { getAllPosts } from '../lib/api';
+import Link from 'next/link';
+import Navigation from '../components/Navigation/Navigation';
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPosts }) {
   return (
     <Layout>
       <section>
         <h2>Blog</h2>
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
+          {allPosts.map(({ slug, date, title }) => (
+            <li key={slug}>
+              <Link href="/posts/[slug]" as={`/posts/${slug}`}>
                 <a>{title}</a>
               </Link>
               <br />
@@ -24,11 +24,19 @@ export default function Home({ allPostsData }) {
   );
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
+
   return {
-    props: {
-      allPostsData,
-    },
+    props: { allPosts },
   };
-}
+};
+
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData();
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }

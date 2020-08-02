@@ -1,11 +1,18 @@
 ---
-title: "Two Forms of Pre-rendering"
-date: "2020-01-01"
+title: 'Two Forms of Pre-rendering'
+date: '2020-01-01'
 ---
 
 ![photo](https://www.frontlive.pl/static/aa66614154687f50a9298fa798cccb73/4d3f1/readme.png)
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a `page`.
+
+```js codesandbox=react
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<h1>Hello remark-codesandbox!</h1>, document.getElementById('root'));
+```
 
 ~~This is wrong~~
 
@@ -57,7 +64,6 @@ export default const App = () => {
     <div>
       <input type="number" value={a} onChange={handleChangeA} />
       <input type="number" value={b} onChange={handleChangeB} />
-
       <p>
         {a} + {b} = {a + b}
       </p>
@@ -66,7 +72,7 @@ export default const App = () => {
 };
 ```
 
-```terminal
+```
 npm run start
 ```
 

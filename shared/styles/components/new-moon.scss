@@ -14,7 +14,7 @@ code {
 pre.language-terminal code.language-terminal {
   position: relative;
   padding: 1rem;
-  font-family: "Fira Code";
+  font-family: 'Fira Code';
   border: 1px solid #d8d9da;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.16);
   border-radius: 6px;
@@ -25,7 +25,7 @@ pre.language-terminal code.language-terminal {
   color: #333;
 
   &::before {
-    content: "\2022 \2022 \2022";
+    content: '\2022 \2022 \2022';
     position: absolute;
     top: 0;
     left: 0;
@@ -42,8 +42,8 @@ pre.language-terminal code.language-terminal {
   }
 }
 
-code[class*="language-"],
-pre[class*="language-"],
+code[class*='language-'],
+pre[class*='language-'],
 pre code {
   font-family: $code-font-family;
   font-size: 13px;
@@ -86,7 +86,7 @@ kbd {
   font-size: 14px;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 3px 5px;
   color: #111111;
   font-weight: 500;
@@ -103,10 +103,10 @@ kbd {
   font-size: 14px;
 }
 
-code[class*="language-css"],
-code[class*="language-scss"],
-code[class*="language-less"],
-code[class*="language-sass"] {
+code[class*='language-css'],
+code[class*='language-scss'],
+code[class*='language-less'],
+code[class*='language-sass'] {
   color: #cc99cc;
 }
 
@@ -124,8 +124,8 @@ code[class*="language-sass"] {
 @include small-breakpoint {
   code,
   pre.language-terminal code.language-terminal,
-  code[class*="language-"],
-  pre[class*="language-"],
+  code[class*='language-'],
+  pre[class*='language-'],
   pre code {
     font-size: 14px;
   }
@@ -308,19 +308,19 @@ code::selection {
   background: rgba(150, 150, 150, 0.3) !important;
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection,
-code[class*="language-"] ::-moz-selection {
+pre[class*='language-']::-moz-selection,
+pre[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection,
+code[class*='language-'] ::-moz-selection {
   text-shadow: none;
   color: inherit;
   background: rgba(150, 150, 150, 0.3) !important;
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"]::selection,
-code[class*="language-"] ::selection,
-code[class*="language-"] ::selection {
+pre[class*='language-']::selection,
+pre[class*='language-']::selection,
+code[class*='language-'] ::selection,
+code[class*='language-'] ::selection {
   text-shadow: none;
   color: inherit;
   background: rgba(150, 150, 150, 0.3) !important;
@@ -406,4 +406,81 @@ hr {
 
 del {
   text-decoration-color: #0e9c97;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
 }
