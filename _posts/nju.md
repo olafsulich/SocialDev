@@ -5,6 +5,13 @@ date: '2020-01-01'
 
 <script>alert('xss :D')</script>
 
+```js:hello.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<h1>Hello remark-codesandbox!</h1>, document.getElementById('root'));
+```
+
 ![photo](https://www.frontlive.pl/static/aa66614154687f50a9298fa798cccb73/4d3f1/readme.png)
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a `page`.

@@ -1,7 +1,6 @@
 import Layout from '../../components/layout';
 import Head from 'next/head';
 import Navigation from '../../components/navigation/Navigation';
-import Markdown from '../../components/markdown/Markdown';
 import { useEffect } from 'react';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml.js';
@@ -46,11 +45,12 @@ export async function getStaticProps({ params }) {
       if (name !== 'class') {
         return;
       }
+
       return `${name}="${xss.escapeAttrValue(value)}"`;
     },
   });
 
-  const content = await markdownToHtml(sanitizedHtml || '');
+  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {

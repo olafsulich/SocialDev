@@ -35,6 +35,7 @@
     "react-syntax-highlighter": "^12.2.1",
     "remark": "^12.0.1",
     "remark-autolink-headings": "^6.0.1",
+    "remark-code-titles": "^0.1.1",
     "remark-codesandbox": "^0.5.2",
     "remark-emoji": "^2.1.0",
     "remark-highlight.js": "^6.0.0",

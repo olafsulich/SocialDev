@@ -11,18 +11,15 @@ code {
   font-size: 13px;
 }
 
-pre.language-terminal code.language-terminal {
+pre code.language-bash {
   position: relative;
-  padding: 1rem;
-  font-family: 'Fira Code';
-  border: 1px solid #d8d9da;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.16);
-  border-radius: 6px;
-  padding-top: 45px;
+  background: #fff;
+  color: #595c62;
+  box-shadow: 0 8px 16px rgba(100, 120, 130, 0.35);
+  padding-top: 4rem;
   margin: 2rem 0;
-  font-size: 13px;
-  background: white;
-  color: #333;
+  border-radius: 0.3rem;
+  border: 1px solid #c9cccf;
 
   &::before {
     content: '\2022 \2022 \2022';
@@ -30,15 +27,29 @@ pre.language-terminal code.language-terminal {
     top: 0;
     left: 0;
     height: 5px;
-    background: #e1e1e1;
-    color: #c2c3c4;
+    background: #e0e3e7;
+    color: #b3b9c5;
     width: 100%;
     font-size: 2.5rem;
     margin: 0;
     line-height: 0;
-    padding: 15px 0 5px 0;
-    text-indent: 4px;
+    padding: 18px 0 12px;
+    text-indent: 6px;
     letter-spacing: -5px;
+    // content: '\2022 \2022 \2022';
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 5px;
+    // background: #e0e3e7;
+    // color: #c2c3c4;
+    // width: 100%;
+    // font-size: 2.5rem;
+    // margin: 0;
+    // line-height: 0;
+    // padding: 18px 0 16px;
+    // text-indent: 6px;
+    // letter-spacing: -18px;
   }
 }
 
@@ -123,7 +134,7 @@ code[class*='language-sass'] {
 
 @include small-breakpoint {
   code,
-  pre.language-terminal code.language-terminal,
+  pre code.language-bash,
   code[class*='language-'],
   pre[class*='language-'],
   pre code {
@@ -414,6 +425,10 @@ del {
   padding: 0.5em;
   color: #abb2bf;
   background: #282c34;
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.3rem;
 }
 
 .hljs-comment,
@@ -483,4 +498,18 @@ del {
 
 .hljs-link {
   text-decoration: underline;
+}
+
+.remark-code-title {
+  margin-bottom: -2.5rem;
+  line-height: 1.8;
+  background-color: #000;
+  color: #fff;
+  z-index: 1;
+  height: 3rem;
+  border-radius: 4px;
+  padding: 0.5rem 0 0 1.5rem;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
