@@ -6,10 +6,22 @@ date: '2020-01-01'
 <script>alert('xss :D')</script>
 
 ```js:hello.js
-import React from 'react';
-import ReactDOM from 'react-dom';
+const stripe = require('stripe')('sadasjdbasjdba');
 
-ReactDOM.render(<h1>Hello remark-codesandbox!</h1>, document.getElementById('root'));
+await stripe.paymentIntents.create({
+  amount: 200,
+  price: 300,
+  name: 'car',
+});
+
+create();
+
+const myVar = 13;
+const string = 'string';
+const obj = {
+  first: 'first',
+  second: 'second',
+};
 ```
 
 ![photo](https://www.frontlive.pl/static/aa66614154687f50a9298fa798cccb73/4d3f1/readme.png)
@@ -73,7 +85,7 @@ const App = () => {
 ```
 
 ```bash
-npm run start
+$ npm run start
 ```
 
 ```js
@@ -98,7 +110,7 @@ numbers.flat(2); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] - drugi poziom spłaszczenia
 ```
 
 ```bash
-npm install react-native --save
+$ npm install react-native --save
 ```
 
 > Quote here **interesting shit** `lol`
