@@ -28,7 +28,7 @@
     "normalize-scss": "^7.0.1",
     "polish-plurals": "^1.1.0",
     "prismjs": "^1.20.0",
-    "react": "0.0.0-experimental-4c8c98ab9",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-4c8c98ab9",
     "react-markdown": "^4.3.1",
     "react-query": "^2.4.15",
