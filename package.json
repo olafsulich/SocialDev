@@ -20,7 +20,7 @@
     "gray-matter": "^4.0.2",
     "helmet": "^3.23.3",
     "install": "^0.13.0",
-    "next": "9.3.5",
+    "next": "11.1.0",
     "next-images": "^1.4.0",
     "next-offline": "^5.0.2",
     "next-optimized-images": "^2.6.1",
